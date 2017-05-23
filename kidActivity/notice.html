@@ -1,0 +1,39 @@
+<context>
+	<!--<div class="addnewOne" name='addnewOne' data-action='addnewOne'>
+		+
+	</div>-->
+	<div class="context-wrap notice-wrap1">
+
+		<ul name="context_list">
+			
+		</ul>
+	</div>
+	<header>
+		<icon class="category-left">
+			<img src="icon/category.svg">
+		</icon>
+		<span class="header-title">
+          公告
+      </span>
+		<icon class="category-right">
+			<img src="img/xuexiang.svg">
+		</icon>
+	</header>
+</context>
+
+<script data-name="context_list" type="text/html">
+{{ var length = data.str.length; }}
+     {{ for(var k =0;k<length;k++) { var one = data.str[k]; }}
+	<li class="notice-li" name="notice-li" data-click="notice-li">
+		<div class="notice-title">
+			{{=one.title}}
+		</div>
+		<div class="notice-con">
+			{{=one.context}}
+		</div>
+		<div class="notice-date">
+			<span>{{=Time.timeTodate(one.create_time)}}</span>
+		</div>
+	</li>
+		{{ } }}
+</script>

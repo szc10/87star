@@ -1,0 +1,48 @@
+<context>
+	<header>
+		<icon class="category-left">
+			<img src="icon/category.svg">
+		</icon>
+		<span class="header-title">
+          充值記錄
+      </span>
+		<icon class="category-right">
+			<img src="img/xuexiang.svg">
+		</icon>
+	</header>
+
+	<div class="context-wrap rl-wrap">
+		<div class="rl-tab">
+			<div class="rl-sell rl-record " name='rl-sell' data-action="rl-sell">
+				進分記錄
+			</div>
+			<div class="rl-buy" name='rl-buy' data-action="rl-buy">
+				減分記錄
+			</div>
+		</div>
+		<ul class="rl-list" name="context_list">
+			
+		</ul>
+
+
+	</div>
+</context>
+<script data-name="context_list" type="text/html">
+<li>
+		<p>
+			<span class="rl-list-id">记录</span>
+			<span class="rl-list-count">金币</span>
+			<span class="rl-list-date">时间</span>
+		</p>
+	</li>
+{{ var length = data.str.length; }}
+     {{ for(var k =0;k<length;k++) { var one = data.str[k]; }}
+	<li>
+		<p>
+			<span class="rl-list-id"> {{=one.context}}</span>
+			<span class="rl-list-count">{{=one.coins}}</span>
+			<span class="rl-list-date">{{=Time.timeTodate(one.create_time)}}</span>
+		</p>
+	</li>
+		{{ } }}
+</script>

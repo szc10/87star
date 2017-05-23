@@ -1,0 +1,46 @@
+﻿{
+  "activity": [
+    {
+      "name": "main",
+      "layout": "layout/main.html",
+      "script": "layout/main.js",
+      "css": "layout/main.css"
+    },
+    {
+      "name": "nextMgr",
+      "layout": "kidActivity/nextMgr.html",
+      "script": "kidActivity/nextMgr.js",
+      "css": "kidActivity/nextMgr.css"
+    },
+    {
+      "name": "rechargeList",
+      "layout": "kidActivity/rechargeList.html",
+      "script": "kidActivity/rechargeList.js",
+      "css": "kidActivity/rechargeList.css"
+    },
+    {
+      "name": "notice",
+      "layout": "kidActivity/notice.html",
+      "script": "kidActivity/notice.js",
+      "css": "kidActivity/notice.css"
+    },
+    {
+      "name": "my",
+      "layout": "kidActivity/my.html",
+      "script": "kidActivity/my.js",
+      "css": "kidActivity/my.css"
+    },
+    {
+     "name": "addNotice",
+      "layout": "layout/addNotice.html",
+      "script": "layout/addNotice.js" ,
+      "css": "layout/addNotice.css" 
+    },
+    {
+    "name": "revise",
+      "layout": "layout/revise.html",
+      "script": "layout/revise.js" ,
+      "css": "layout/revise.css" 
+    }
+   ]
+}

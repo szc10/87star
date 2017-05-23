@@ -1,0 +1,40 @@
+._text-context{
+    color: #676767;
+    padding-left: 22px;
+    /* padding-top: 16px; */
+    /* padding-bottom: 15px; */
+    /* box-shadow: 0 1px 2px rgba(0,0,0,.2); */
+    font-weight: bold;
+    padding-right: 22px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    background: #fff;
+    overflow: scroll;
+    max-height: calc(100% - 88px);
+}
+.revise-wrap{
+			margin-top: 45px;
+			width: 90%;
+			padding: 5%;
+			
+		}
+		.revise-wrap input{
+			height: 45px;
+			width: 90%;
+			
+		}
+		.revise-oldpassword,.revise-newpassword,.revise-repeat{
+			border-bottom: 1px solid #cccccc;
+			text-indent: 1rem;
+		}
+		.revise-submit {
+			background: #5677FC;
+			font-size: 1.2rem;	
+			border-radius: 5px ;
+			margin-top: 20px;
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,0.40);
+		}
+		.revise-submit input{
+			width: 100%;
+			color: white;
+		}

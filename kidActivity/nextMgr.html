@@ -1,0 +1,37 @@
+<context>
+	<header>
+		<icon class="category-left">
+			<img src="icon/category.svg">
+		</icon>
+		<span class="header-title">
+        玩家管理
+    </span>
+		<icon class="category-right">
+			<img src="img/xuexiang.svg">
+		</icon>
+	</header>
+	<div class="context-wrap">
+		<div class="nM-search">
+			<input type="text" placeholder="輸入玩家ID/暱稱" />
+		</div>
+		<ul name="custom_context_list">
+
+		</ul>
+	</div>
+
+</context>
+<script data-name="custom_context_list" type="text/html">
+	{{ var length = data.str.length; }}
+     {{ for(var k =0;k<length;k++) { var one = data.str[k]; }}
+<li class="nM-li" name="nM-li" data-click="nM-infor">
+    <div class="nM-img" style="background-image:url({{=user.getHead(one.photo)}})">
+    </div>
+    <div class="nM-infor">
+        <p class="nM-name"> {{=one.username}}/{{=one.name}}</p>
+    </div>
+    <div class="nM-more">
+    </div>
+</li>
+	{{ } }}
+
+</script>

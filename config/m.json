@@ -1,0 +1,20 @@
+﻿{
+  "name": "博技事達",
+  "version": "1.0.0",
+  "description": "",
+  "author": "wsd",
+  "script":["js/config.js","js/class.js","libs/js/Alert.js","libs/js/tool.js"],
+  "CSS":["css/index.css"],
+  "icon":{
+    "url":"icon/logo.png"
+  },
+  "preImage":["img/nextMgr.svg","img/nextMgr_a.svg","img/notice.svg","img/notice_a.svg","img/rechargeList.svg","img/rechargeList_a.svg","img/my.svg","img/my_a.svg"],
+  "activity": [
+    {
+    "name":"login",
+    "layout":"layout/login.html",
+    "script":"layout/login.js",
+    "css":"layout/login.css"
+    }
+   ]
+}

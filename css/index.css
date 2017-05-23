@@ -1,0 +1,124 @@
+header{
+  background-color: #5677FC;
+  padding-top: 35px;
+  height: 30px;
+  padding-left: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  line-height: 1.4rem;
+}
+
+.context-wrap{
+    width: 100%;
+	margin-top: 65px;
+     height: calc(100% - 66px);
+     overflow-y: scroll;
+}
+
+.header-title{
+  color: #f6f6f6;
+  float: left;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  line-height: 1.1;
+}
+.category-left{
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 50%;
+}
+.category-left img{
+width: 100%;
+height: 100%;
+}
+.category-right{
+width: 15px;
+height: 15px;
+float: right;
+right: 20px;
+border-radius: 50%;
+position: relative;
+}
+.category-right img{
+width: 100%;
+height: 100%;
+}
+
+.main-context {
+    height: calc(100% - 50px);
+    width: 100%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+.main-button {
+    background-color: #FAFAFA;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    border-top: 1px #ddd solid;
+    color: #b5b5b5;
+}
+
+.main-button ul {
+    display: flex;
+    height: 100%;
+}
+
+.main-button li {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: color 0.1s;
+  -moz-transition: color 0.1s;
+  -webkit-transition: color 0.1s;
+  -o-transition: color 0.1s;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position-x: 50%;
+  background-position-y: 5px;
+  line-height: 7;
+  font-size: 12px;
+}
+.main-button li.active {
+    color: #5677FC;
+
+}
+.main-button li[data-target="nextMgr"]{
+          background-image: url(../img/nextMgr.svg);
+}
+.main-button li[data-target="nextMgr"].active{
+          background-image: url(../img/nextMgr_a.svg);
+}
+.main-button li[data-target="gameMgr"]{
+          background-image: url(../img/gameMgr.svg);
+}
+.main-button li[data-target="gameMgr"].active{
+          background-image: url(../img/gameMgr_a.svg);
+}
+.main-button li[data-target="rechargeList"]{
+          background-image: url(../img/rechargeList.svg);
+}
+.main-button li[data-target="rechargeList"].active{
+          background-image: url(../img/rechargeList_a.svg);
+}
+.main-button li[data-target="notice"]{
+          background-image: url(../img/notice.svg);
+}
+.main-button li[data-target="notice"].active{
+          background-image: url(../img/notice_a.svg);
+}
+.main-button li[data-target="my"]{
+          background-image: url(../img/my.svg);
+}
+.main-button li[data-target="my"].active{
+          background-image: url(../img/my_a.svg);
+}
