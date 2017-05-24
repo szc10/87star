@@ -667,6 +667,9 @@ Action = (function() {
             for (var i = 0; i < actionArr.length; i++) {
                 dealAction.call(target, type, actionArr[i]);
             }
+            // console.log(domAction[type]['test']);
+
+            
 
             function dealAction(type, action) {
                 if (domAction[type][action]) {

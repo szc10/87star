@@ -15,6 +15,18 @@
     "layout":"layout/login.html",
     "script":"layout/login.js",
     "css":"layout/login.css"
+    },
+    {
+    "name":"reg",
+    "layout":"layout/reg.html",
+    "script":"layout/reg.js",
+    "css":"layout/reg.css"
+    },
+    {
+     "name": "switch_pay",
+      "layout": "layout/switch_pay.html",
+      "script": "layout/switch_pay.js" ,
+      "css": "layout/switch_pay.css" 
     }
    ]
 }

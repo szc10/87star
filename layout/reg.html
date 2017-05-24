@@ -1,0 +1,49 @@
+<context>
+	<header>
+		<icon class="category-left">
+			<!--<img src="icon/category.svg">-->
+		</icon>
+		<span class="header-title">
+          用户注册
+      </span>
+		<icon class="category-right">
+			<!--<img src="img/xuexiang.svg">-->
+		</icon>
+	</header>
+
+	<div class="context-wrap rl-wrap">
+		<div class="rl-tab">
+			<div class="rl-sell rl-record " name='costom_reg' data-action="costom_reg">
+				顾客注册
+			</div>
+			<div class="rl-buy" name='shop_reg' data-action="shop_reg">
+				商户注册
+			</div>
+		</div>
+
+		<div class="reg-context-wrap">
+
+		<div class="costom_reg_wrap reg_wrap" name="costom_reg_wrap">
+
+				<input type="text" name="c_phone" placeholder="請輸入手机号" />
+				<input type="text" name="c_name" placeholder="請輸入昵称" />
+				<input type="text" name="c_username" placeholder="請輸入用戶名" />
+				<input type="password" name="c_password" placeholder="請輸入密码" />
+                <button data-action="c_submit">注册</button>
+			</div>
+
+			<div class="shop_reg_wrap reg_wrap" name="shop_reg_wrap">
+
+				<input type="text" name="s_phone" placeholder="請輸入联系方式" />
+				<input type="text" name="s_name" placeholder="請輸入商户名" />
+				<input type="text" name="s_username" placeholder="請輸入用戶名" />
+				<input type="text" name="s_address" placeholder="請輸入商户地址" />
+				<input type="password" name="s_password" placeholder="請輸入密码" />
+                <button data-action="s_submit">注册</button>
+
+			</div>
+	
+		</div>
+
+	</div>
+</context>

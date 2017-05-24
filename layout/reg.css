@@ -1,0 +1,67 @@
+._text-context{
+    color: #676767;
+    padding-left: 22px;
+    font-weight: bold;
+    padding-right: 22px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    background: #fff;
+    overflow: scroll;
+    max-height: calc(100% - 88px);
+}
+		.rl-tab{
+			text-align: center;
+			height: 52px;
+			background: #5677fc;
+			overflow: hidden;	
+			box-shadow: 1px 1px 1px 1px #dcdcdc;
+			
+		}
+		.rl-tab div{
+			height: 51px;
+			border-bottom: 1px solid #5677FC;
+			float: left;
+			width: 50%;
+			font-size: 1rem;
+			line-height: 50px;
+			color: #aabbfd;
+		}
+		
+		.rl-tab .rl-record{
+			border-bottom:  1px solid white;
+			color: white;
+		}
+		.reg-context-wrap{
+			width: 100%;
+		}
+		.reg-context-wrap .reg_wrap{
+			width: 100%;
+			/*padding: 10px 10px 10px 10px;*/
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.reg-context-wrap input{
+	text-indent: .6rem;
+    width: 90%;
+    background: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    margin-top: 5px;
+		}
+		.reg-context-wrap button{
+				margin-top: 20px;
+	width: 90%;
+	height: 45px;
+	font-size: 1.25rem;
+	text-align: center;
+	color: white;
+	background: #5677FC;
+	box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+	font-weight: 400;
+		}

@@ -1,7 +1,10 @@
 <context>
 	<header>
-		<icon class="category-left">
+		<icon class="category-left" name="nav">
 			<img src="icon/category.svg">
+		</icon>
+		<icon class="category-left" data-action="back" name="back">
+			<img src="icon/back.svg">
 		</icon>
 		<span class="header-title">
         玩家管理
@@ -21,17 +24,17 @@
 
 </context>
 <script data-name="custom_context_list" type="text/html">
-	{{ var length = data.str.length; }}
-     {{ for(var k =0;k<length;k++) { var one = data.str[k]; }}
-<li class="nM-li" name="nM-li" data-click="nM-infor">
-    <div class="nM-img" style="background-image:url({{=user.getHead(one.photo)}})">
-    </div>
-    <div class="nM-infor">
-        <p class="nM-name"> {{=one.username}}/{{=one.name}}</p>
-    </div>
-    <div class="nM-more">
-    </div>
-</li>
-	{{ } }}
+	{{ var length = data.str.length; }} {{ for(var k =0;k
+	<length;k++) { var one=data.str[k]; }} <li class="nM-li" name="nM-li" data-action="switch_pay" data-id="{{=one.id}}"
+	 data-click="nM-infor">
+		<div class="nM-img" style="background-image:url({{=user.getHead(one.photo)}})">
+		</div>
+		<div class="nM-infor">
+			<p class="nM-name"> {{=one.username}}/{{=one.name}}</p>
+		</div>
+		<div class="nM-more">
+		</div>
+		</li>
+		{{ } }}
 
 </script>

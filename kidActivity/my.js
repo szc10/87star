@@ -36,6 +36,10 @@ APP.define({
             self.transfer.loadActivity("revise", "revise").init().activite();
             self.transfer.sleep();
         });
+        this.addEvent('click','switch-coin',function(){
+             self.transfer.loadActivity("nextMgr", "nextMgr1").init(1).activite();
+             self.transfer.sleep();
+        })
         /**
          * 推出登录
          */
